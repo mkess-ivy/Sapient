@@ -1,0 +1,107 @@
+body {
+	font-family: Helvetica Neue, Helvetica, sans-serif;
+} 
+
+/* ======================BLOCKS =====================*/
+.main {
+	max-width: 1400px;
+	height: 100px;
+	background: Black;
+	position: relative;
+}
+
+.squeeze {
+	width: 800px;
+	/*border: 10px solid Red;*/
+	z-index: 110;
+	position: relative;
+	margin: auto;
+}
+
+.logo {
+	width: 200px;
+	height: 65px;
+	padding: 15px 0;
+
+	/*background-image: url('../image-assets/axiom-logo-main.png');*/
+}
+
+/* ======================ELEMENTS =====================*/
+
+
+.navList {
+	display: inline-block;
+	padding-right: 2px;
+	
+}
+
+.navMenu {
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+	/*font-size: 25px;*/
+	margin-left: -35px;
+	font-size: 12px;
+	margin-top: 35px;
+}
+
+.navMenu a {
+	color: Grey;
+	text-decoration: none;
+	float: left;
+	/*padding: 20px 4px;*/
+
+	margin: auto;
+	/*font-size: 10px;*/
+}
+
+.leftSection {
+	width: 350px;
+	position: relative;
+	float: right;
+	margin-right: -20px;
+	height: 97px;
+	padding-top: 10px;
+}
+
+.searchBar {
+	width: 180px;
+	background: White;
+	height: 25px;
+	position: relative;
+	margin-top: 20px;
+	float: right;
+}
+
+/* ======================MODIFIERS =====================*/
+
+.second {
+	height: 50px;
+	background: White;
+}
+
+.third {
+	height: 500px;
+	background: DarkBlue;
+}
+
+.fourth {
+	height: 500px;
+	background: Grey;
+}
+
+.fifth {
+	height: 500px;
+	background: DarkBlue;
+}
+
+.sixth {
+	background: Black;
+}
+
+.pipes:after {
+	content: '|';
+}
+
+
+/* ======================COLOR SWATCHES =====================*/
