@@ -1,29 +1,32 @@
 body {
 	font-family: Helvetica Neue, Helvetica, sans-serif;
-} 
+	font-family: 'Raleway', sans-serif;
+}
+
+.container {
+	width: 100%;
+}
 
 /* ======================BLOCKS =====================*/
 .main {
-	max-width: 1400px;
+	width: 100%;
 	height: 100px;
 	background: Black;
 	position: relative;
 }
 
 .squeeze {
-	width: 800px;
+	width: 65%;
 	/*border: 10px solid Red;*/
-	z-index: 110;
+	/*z-index: 110;*/
 	position: relative;
 	margin: auto;
 }
 
 .logo {
-	width: 200px;
-	height: 65px;
+	width: 25%;
+	/*height: 65px;*/
 	padding: 15px 0;
-
-	/*background-image: url('../image-assets/axiom-logo-main.png');*/
 }
 
 /* ======================ELEMENTS =====================*/
@@ -32,8 +35,16 @@ body {
 .navList {
 	display: inline-block;
 	padding-right: 2px;
-	
 }
+
+/* trying to get the separator for the main menu */
+/*.navList li:after {
+	content: '|';
+}
+
+.navList li:last-child {
+	content: '';
+}*/
 
 .navMenu {
 	width: 100%;
@@ -45,14 +56,24 @@ body {
 	margin-top: 35px;
 }
 
+.navMenu-width {
+	width: 100%;
+}
+
+.navList-width {
+	padding: 0 9% 0 0;
+}
+
+.specMenu {
+	font-size: 1.6em;
+	margin-top: 10px;
+}
+
 .navMenu a {
 	color: Grey;
 	text-decoration: none;
 	float: left;
-	/*padding: 20px 4px;*/
-
 	margin: auto;
-	/*font-size: 10px;*/
 }
 
 .leftSection {
@@ -65,7 +86,7 @@ body {
 }
 
 .searchBar {
-	width: 180px;
+	min-width: 20%;
 	background: White;
 	height: 25px;
 	position: relative;
@@ -76,23 +97,24 @@ body {
 /* ======================MODIFIERS =====================*/
 
 .second {
-	height: 50px;
+	height: 40px;
 	background: White;
 }
 
 .third {
-	height: 500px;
-	background: DarkBlue;
+	/*background: DarkBlue;*/
+	background-image: url('../image-assets/topsection-background.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .fourth {
-	height: 500px;
 	background: Grey;
 }
 
 .fifth {
-	height: 500px;
-	background: DarkBlue;
+	background: #00324e;
 }
 
 .sixth {
@@ -101,6 +123,133 @@ body {
 
 .pipes:after {
 	content: '|';
+}
+
+.fivehundred {
+	height: 500px;
+}
+
+.sixhundred {
+	height: 600px;
+}
+
+.opaque-layer {
+	background: #333;
+	opacity: 0.5;
+	z-index: 110;
+	position: relative;
+	height: 100%;
+}
+
+.product-layer {
+	position: relative;
+	z-index: 500;
+}
+
+.text-layer {
+	position: relative;
+	float: right;
+	padding-right: 20px;
+	color: white;
+	width: 40%;
+}
+.product-title {
+	font-size: 2.3em;
+}
+
+.product-list {
+	list-style: none;
+	margin-left: -30px;
+	text-transform: uppercase;
+}
+
+.breadcrumb {
+	color: White;
+	padding: 9px 0 0 12px;
+	/*font-size: 1em;*/
+}
+
+.breadcrumb a {
+	color: white;
+	font-size: 1em;
+}
+
+.image {
+	height: 400px;
+	padding: 30px 40px;
+}
+
+.image-width {
+	width: 380px;
+	height: 300px;
+}
+
+.section-header {
+	color: white;
+	position: relative;
+	float: left;
+	height: 60px;
+	/*background: red;*/
+	/*width: 130px;*/
+	display: inline-block;
+	margin-left: 150px;
+}
+
+.subtitle {
+	float: left;
+	position: relative;
+	padding-top: 40px;
+	padding-left: 40px;
+}
+
+.subtitle a {
+	color: white;
+}
+
+.review {
+	width: 100%;
+	height: 230px;
+	background: orange;
+	position: relative;
+	border-bottom: 1px solid black;
+
+}
+
+.reviewsection {
+	position: relative;
+	/*float: justify;*/
+	padding-top: 100px;
+}
+
+.authorpic {
+	height: 125px;
+	width: 125px;
+	background: red;
+	position: relative;
+	float: left;
+}
+
+.reviewtitle {
+	/*width: 80%;*/
+	height: 50px;
+	background: gray;
+	/*float: left;*/
+	/*margin-left: 30px;*/
+}
+
+.reviewtext {
+	/*width: 80%;*/
+	height: 175px;
+	position: relative;
+	/*float:left;*/
+	background: black;
+	/*margin-left: 30px;*/
+}
+
+.reviewspecs {
+	width: 80%;
+	float: left;
+	margin-left: 30px;
 }
 
 
